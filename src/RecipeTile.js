@@ -4,9 +4,9 @@ import './RecipeTile.css'
 export default function RecipeTile({ recipe }) {
   return (
 
-    recipe["recipe"]["image"].match(/\.(jpeg|jpg|gif|png)$/) != null   // to check if the object getting fetched is in image format only
-    &&
-    (
+    // recipe["recipe"]["image"].match(/\.(jpeg|jpg|gif|png)$/) != null   // to check if the object getting fetched is in image format only
+    // &&
+    // (
       <div className='recipeTile' onClick={() => {
         window.open(recipe["recipe"]["url"])
       }}>
@@ -19,7 +19,7 @@ export default function RecipeTile({ recipe }) {
         </p>
 
       </div>
-    )
+    // )
   )
 }
 
